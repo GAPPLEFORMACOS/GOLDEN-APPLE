@@ -11,7 +11,7 @@ jobs:
         with:
           haxe-version: 4.1.5
 
-      - name: installing libraries
+      - name: install libraries thing
         run: |
           haxelib setup ~/haxelib
           haxelib install lime 7.9.0
@@ -21,6 +21,10 @@ jobs:
           haxelib install flixel-ui 2.3.3
           haxelib install hscript 2.4.0
           haxelib install newgrounds
+          haxelib install actuate
+          haxelib install hxcpp
+          haxelib install format
+          haxelib install hxp
           haxelib run lime setup -alias -y
 
       - name: compiling
