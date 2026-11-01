@@ -25,6 +25,7 @@ jobs:
           haxelib install hxcpp
           haxelib install format
           haxelib install hxp
+          haxelib git extension-webm https://github.com/GrowtopiaFli/extension-webm
           haxelib run lime setup -alias -y
 
       - name: compiling
